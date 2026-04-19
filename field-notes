@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Field Notes — Vafadher</title>
+  <title>field-notes — Vafadher</title>
   <meta name="description" content="Operator observations on execution gaps, marketplace lessons, brand clarity, and what founders usually miss." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
         <li><a href="momentum.html" class="nav-link">Momentum</a></li>
         <li><a href="index.html#systems" class="nav-link">Systems</a></li>
         <li><a href="index.html#working-rhythm" class="nav-link">Working Rhythm</a></li>
-        <li><a href="field-notes.html" class="nav-link active">Field Notes</a></li>
+        <li><a href="field-notes" class="nav-link active">field-notes</a></li>
         <li><a href="index.html#discovery" class="nav-link nav-cta">Discovery</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -36,7 +36,7 @@
       <li><a href="momentum.html" class="mob-link">Momentum</a></li>
       <li><a href="index.html#systems" class="mob-link">Systems</a></li>
       <li><a href="index.html#working-rhythm" class="mob-link">Working Rhythm</a></li>
-      <li><a href="field-notes.html" class="mob-link">Field Notes</a></li>
+      <li><a href="field-notes" class="mob-link">field-notes</a></li>
       <li><a href="index.html#discovery" class="mob-link">Discovery</a></li>
     </ul>
   </div>
@@ -45,7 +45,7 @@
   <div style="border-bottom: 1px solid var(--b-dim);">
     <div class="page-hero" data-reveal>
       <span class="page-hero-eyebrow">Operator observations</span>
-      <h1>Field Notes</h1>
+      <h1>field-notes</h1>
       <p>Short pieces on execution gaps, marketplace lessons, brand clarity, and what founders usually miss. Written from the inside of the work, not from the outside looking in.</p>
     </div>
   </div>
