@@ -7,21 +7,21 @@
   <meta name="description" content="Founder-side execution for brands that need real movement across growth, systems, and execution." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="grain" aria-hidden="true"></div>
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">Vafadher</a>
+      <a href="index.html" class="nav-logo">Vafadher</a>
       <ul class="nav-links">
-        <li><a href="#" class="nav-link active">Home</a></li>
-        <li><a href="#momentum" class="nav-link">Momentum</a></li>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="momentum.html" class="nav-link">Momentum</a></li>
         <li><a href="#systems" class="nav-link">Systems</a></li>
         <li><a href="#working-rhythm" class="nav-link">Working Rhythm</a></li>
-        <li><a href="#field-notes" class="nav-link">Field Notes</a></li>
+        <li><a href="field-notes.html" class="nav-link">Field Notes</a></li>
         <li><a href="#discovery" class="nav-link nav-cta">Discovery</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -32,49 +32,39 @@
 
   <div class="mobile-nav" id="mobileNav">
     <ul>
-      <li><a href="#" class="mob-link">Home</a></li>
-      <li><a href="#momentum" class="mob-link">Momentum</a></li>
+      <li><a href="index.html" class="mob-link">Home</a></li>
+      <li><a href="momentum.html" class="mob-link">Momentum</a></li>
       <li><a href="#systems" class="mob-link">Systems</a></li>
       <li><a href="#working-rhythm" class="mob-link">Working Rhythm</a></li>
-      <li><a href="#field-notes" class="mob-link">Field Notes</a></li>
+      <li><a href="field-notes.html" class="mob-link">Field Notes</a></li>
       <li><a href="#discovery" class="mob-link">Discovery</a></li>
     </ul>
   </div>
 
-  <!-- ============================================================
-       HERO — Cinematic scene, asymmetric, Bombon-level presence
-       ============================================================ -->
+  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-atmosphere"></div>
-
     <div class="hero-inner">
-      <!-- LEFT -->
+
       <div class="hero-left" data-reveal>
         <span class="hero-overline">E-commerce Operator &nbsp;/&nbsp; Marketplace Growth &nbsp;/&nbsp; Systems & Brand Execution</span>
-        <h1 class="hero-title">Vafa<br><em>dher</em></h1>
+        <h1 class="hero-title">Vafa<em>dher</em></h1>
         <p class="hero-tagline">Founder-side execution for brands<br>that need real movement.</p>
         <p class="hero-body">I work with founders who are done with surface-level strategy and need real movement across growth, systems, and execution.</p>
         <div class="hero-actions">
           <a href="#discovery" class="btn-primary">Find the Friction</a>
-          <a href="#momentum" class="btn-ghost">See the Momentum &nbsp;↓</a>
+          <a href="momentum.html" class="btn-ghost">See the Momentum <span class="btn-arrow">→</span></a>
         </div>
       </div>
 
-      <!-- RIGHT — operator console -->
       <div class="hero-right" data-reveal data-reveal-delay="200">
         <div class="console-frame">
           <div class="console-grid-bg"></div>
-
-          <!-- Header bar -->
           <div class="console-topbar">
-            <div class="console-dots">
-              <span></span><span></span><span></span>
-            </div>
+            <div class="console-dots"><span></span><span></span><span></span></div>
             <span class="console-label">Operator Dashboard</span>
             <div class="console-live"><span class="live-dot"></span>Live</div>
           </div>
-
-          <!-- Metric row -->
           <div class="console-metrics-row">
             <div class="c-metric">
               <span class="c-metric-label">GMV / Month</span>
@@ -91,8 +81,6 @@
               <span class="c-metric-value">95%</span>
             </div>
           </div>
-
-          <!-- Bar chart area -->
           <div class="console-chart">
             <div class="chart-bars">
               <div class="chart-bar" style="--h:45%"><span>Aug</span></div>
@@ -104,10 +92,8 @@
               <div class="chart-bar" style="--h:88%"><span>Feb</span></div>
               <div class="chart-bar" style="--h:95%"><span>Mar</span></div>
             </div>
-            <div class="chart-label">8-month scaling trajectory</div>
+            <div class="chart-label">8-month marketplace scaling trajectory</div>
           </div>
-
-          <!-- Channel pills -->
           <div class="console-channels">
             <span class="ch-pill">Amazon</span>
             <span class="ch-pill">Kalamandir</span>
@@ -115,70 +101,59 @@
             <span class="ch-pill ch-pill--dim">+more</span>
           </div>
         </div>
-
-        <!-- Floating signal cards -->
         <div class="sig-card sig-card--1">
           <span class="sig-icon">↑</span>
-          <div>
-            <p class="sig-val">₹10L+</p>
-            <p class="sig-sub">Backend recovered</p>
+          <div class="sig-text">
+            <p class="sig-val">₹10L+ Recovered</p>
+            <p class="sig-sub">Backend controls & reconciliation</p>
           </div>
         </div>
         <div class="sig-card sig-card--2">
           <span class="sig-icon">◈</span>
-          <div>
-            <p class="sig-val">3 months</p>
-            <p class="sig-sub">₹25L backend built</p>
+          <div class="sig-text">
+            <p class="sig-val">₹25L/month</p>
+            <p class="sig-sub">Revenue generated in 3 months</p>
           </div>
         </div>
       </div>
     </div>
-
     <div class="hero-scroll-hint">
       <div class="scroll-track"></div>
       <span>Scroll</span>
     </div>
   </section>
 
-  <!-- ============================================================
-       PROOF — 4 premium artifacts, Bombon stat-card energy
-       ============================================================ -->
+  <!-- PROOF -->
   <section class="proof" id="proof">
     <div class="proof-inner">
       <div class="proof-card" data-reveal>
-        <div class="proof-corner tl"></div>
-        <div class="proof-corner br"></div>
+        <div class="proof-corner tl"></div><div class="proof-corner br"></div>
         <p class="proof-micro">Revenue Milestone</p>
         <p class="proof-number">₹1.7 Cr</p>
-        <p class="proof-line">Scaled per month — marketplace channels</p>
+        <p class="proof-line">Scaled per month across marketplace channels</p>
       </div>
       <div class="proof-card" data-reveal data-reveal-delay="100">
-        <div class="proof-corner tl"></div>
-        <div class="proof-corner br"></div>
+        <div class="proof-corner tl"></div><div class="proof-corner br"></div>
         <p class="proof-micro">Operational Precision</p>
         <p class="proof-number">95%</p>
-        <p class="proof-line">Sales reconciliation at scale</p>
+        <p class="proof-line">Sales reconciliation rate at scale</p>
       </div>
       <div class="proof-card" data-reveal data-reveal-delay="200">
-        <div class="proof-corner tl"></div>
-        <div class="proof-corner br"></div>
+        <div class="proof-corner tl"></div><div class="proof-corner br"></div>
         <p class="proof-micro">Growth Compression</p>
         <p class="proof-number">₹50L</p>
-        <p class="proof-line">From ₹20L in just 3 months</p>
+        <p class="proof-line">From ₹20L to ₹50L/month in 3 months</p>
       </div>
       <div class="proof-card" data-reveal data-reveal-delay="300">
-        <div class="proof-corner tl"></div>
-        <div class="proof-corner br"></div>
-        <p class="proof-micro">Market Reach</p>
-        <p class="proof-number">Multi</p>
-        <p class="proof-line">Across major commerce channels</p>
+        <div class="proof-corner tl"></div><div class="proof-corner br"></div>
+        <p class="proof-micro">Capital Recovered</p>
+        <p class="proof-number">₹10L+</p>
+        <p class="proof-line">Through sharper backend controls</p>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       BREAKDOWN — editorial, Jet-style large statement
-       ============================================================ -->
+  <!-- BREAKDOWN -->
   <section class="breakdown" id="breakdown">
     <div class="breakdown-inner">
       <div class="breakdown-tag" data-reveal>
@@ -193,9 +168,7 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       SYSTEMS — blueprint grid, modular surfaces
-       ============================================================ -->
+  <!-- SYSTEMS — clean 3×2 grid, zero dead space -->
   <section class="systems" id="systems">
     <div class="systems-inner">
       <div class="systems-hd" data-reveal>
@@ -203,34 +176,33 @@
         <h2 class="section-h">Systems</h2>
         <p class="section-sub">The work usually starts where momentum is blocked.</p>
       </div>
-
       <div class="sys-grid">
-        <div class="sys-item sys-item--wide" data-reveal>
+        <div class="sys-item" data-reveal>
           <div class="sys-num">01</div>
           <h3>Marketplace Growth</h3>
           <p>Launch, scale, structure, and fix marketplace performance across the channels that matter.</p>
         </div>
-        <div class="sys-item" data-reveal data-reveal-delay="80">
+        <div class="sys-item" data-reveal data-reveal-delay="60">
           <div class="sys-num">02</div>
-          <h3>Catalog Architecture</h3>
+          <h3>Catalog & Listing Architecture</h3>
           <p>Sharper titles, cleaner content systems, stronger hierarchy, and better commercial presentation.</p>
         </div>
-        <div class="sys-item" data-reveal data-reveal-delay="140">
+        <div class="sys-item" data-reveal data-reveal-delay="120">
           <div class="sys-num">03</div>
-          <h3>Website & Conversion</h3>
+          <h3>Website & Conversion Structure</h3>
           <p>Pages, flows, offers, and messaging that make the business easier to understand and buy from.</p>
         </div>
-        <div class="sys-item sys-item--tall" data-reveal data-reveal-delay="60">
+        <div class="sys-item" data-reveal data-reveal-delay="60">
           <div class="sys-num">04</div>
           <h3>ERP / CRM / Inventory Sync</h3>
-          <p>Operational structure underneath growth so the business can actually sustain movement.</p>
+          <p>Operational infrastructure underneath growth so the business can actually sustain movement.</p>
         </div>
-        <div class="sys-item" data-reveal data-reveal-delay="160">
+        <div class="sys-item" data-reveal data-reveal-delay="120">
           <div class="sys-num">05</div>
           <h3>Performance & Growth Systems</h3>
           <p>Execution support across ads, acquisition flow, reporting logic, and growth priorities.</p>
         </div>
-        <div class="sys-item sys-item--accent" data-reveal data-reveal-delay="220">
+        <div class="sys-item sys-item--accent" data-reveal data-reveal-delay="180">
           <div class="sys-num">06</div>
           <h3>Brand Clarity & Execution Flow</h3>
           <p>Positioning, messaging, and commercial direction that reduce confusion and strengthen action.</p>
@@ -239,9 +211,7 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       MOMENTUM — case cards, Bombon-style signal energy
-       ============================================================ -->
+  <!-- MOMENTUM -->
   <section class="momentum" id="momentum">
     <div class="momentum-inner">
       <div class="momentum-hd" data-reveal>
@@ -249,7 +219,6 @@
         <h2 class="section-h">Momentum</h2>
         <p class="section-sub">Proof of what moved, what changed, and what it took.</p>
       </div>
-
       <div class="cases">
         <div class="case-card" data-reveal>
           <div class="case-badge">Case 01</div>
@@ -259,7 +228,6 @@
           <div class="case-rule"></div>
           <p class="case-tag">8 months · Amazon · Listing architecture</p>
         </div>
-
         <div class="case-card" data-reveal data-reveal-delay="100">
           <div class="case-badge">Case 02</div>
           <h3 class="case-title">Revenue Lift Through Tighter Execution</h3>
@@ -268,47 +236,49 @@
           <div class="case-rule"></div>
           <p class="case-tag">3 months · Structure · Decision flow</p>
         </div>
-
         <div class="case-card" data-reveal data-reveal-delay="200">
           <div class="case-badge">Case 03</div>
           <h3 class="case-title">Backend Recovery & Control</h3>
           <div class="case-result">₹10L+<span>recovered</span></div>
-          <p class="case-body">Reconciled 95% of sales and helped recover or save ₹10+ lakhs through sharper backend controls and discipline.</p>
+          <p class="case-body">Reconciled 95% of sales and recovered ₹10+ lakhs through sharper backend controls and systematic discipline.</p>
           <div class="case-rule"></div>
           <p class="case-tag">95% reconciliation · Backend systems</p>
         </div>
-
         <div class="case-card" data-reveal data-reveal-delay="300">
           <div class="case-badge">Case 04</div>
-          <h3 class="case-title">Backend Built for Growth</h3>
-          <div class="case-result">₹25L<span>in 3 months</span></div>
-          <p class="case-body">Led the backend, warehouse, and ERP execution layer that supported ₹25L/month within 3 months from a standing start.</p>
+          <h3 class="case-title">Revenue Generated From Ground Up</h3>
+          <div class="case-result">₹25L<span>/month in 3 months</span></div>
+          <p class="case-body">Led the backend, warehouse, and ERP execution layer that generated ₹25L/month in revenue within 3 months of launch.</p>
           <div class="case-rule"></div>
           <p class="case-tag">ERP · Warehouse · Execution layer</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       BRANDS — quiet trust strip
-       ============================================================ -->
-  <section class="brands" id="brands">
-    <div class="brands-inner">
-      <p class="brands-eyebrow" data-reveal>Brands I've helped move</p>
-      <div class="brands-row" data-reveal data-reveal-delay="100">
-        <span class="brand-name">Amazon</span>
-        <span class="brand-sep"></span>
-        <span class="brand-name">Kalamandir</span>
-        <span class="brand-sep"></span>
-        <span class="brand-name">Neerus</span>
+      <div class="section-cta-row" data-reveal>
+        <a href="momentum.html" class="btn-outline">View Full Momentum →</a>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       WORKING RHYTHM — 3-step Jet-style progression
-       ============================================================ -->
+  <!-- BRANDS — marquee -->
+  <section class="brands" id="brands">
+    <div class="brands-header" data-reveal>
+      <p class="brands-eyebrow">Brands I've Helped Move</p>
+    </div>
+    <div class="marquee-wrap" aria-label="Brands worked with">
+      <div class="marquee-track">
+        <div class="marquee-item"><div class="brand-text-logo">Amazon</div></div>
+        <div class="marquee-item"><div class="brand-text-logo">Kalamandir</div></div>
+        <div class="marquee-item"><div class="brand-text-logo">Neerus</div></div>
+        <div class="marquee-item"><div class="brand-text-logo">Urban Dog</div></div>
+        <div class="marquee-item" aria-hidden="true"><div class="brand-text-logo">Amazon</div></div>
+        <div class="marquee-item" aria-hidden="true"><div class="brand-text-logo">Kalamandir</div></div>
+        <div class="marquee-item" aria-hidden="true"><div class="brand-text-logo">Neerus</div></div>
+        <div class="marquee-item" aria-hidden="true"><div class="brand-text-logo">Urban Dog</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKING RHYTHM -->
   <section class="rhythm" id="working-rhythm">
     <div class="rhythm-inner">
       <div class="rhythm-hd" data-reveal>
@@ -316,97 +286,93 @@
         <h2 class="section-h">Working Rhythm</h2>
         <p class="section-sub">The work moves best when the signal is clear, the scope is sharp, and execution starts from the right place.</p>
       </div>
-
       <div class="rhythm-track">
         <div class="rhythm-step" data-reveal>
-          <div class="step-marker">
-            <span class="step-n">01</span>
-          </div>
+          <div class="step-marker"><span class="step-n">01</span></div>
           <div class="step-connector"></div>
           <div class="step-body">
             <h3>Discovery</h3>
-            <p>We identify the real friction, not just the visible symptoms.</p>
+            <p>We identify the real friction, not just the visible symptoms. The conversation starts with what's actually blocked, not what looks broken on the surface.</p>
           </div>
         </div>
         <div class="rhythm-step" data-reveal data-reveal-delay="140">
-          <div class="step-marker">
-            <span class="step-n">02</span>
-          </div>
+          <div class="step-marker"><span class="step-n">02</span></div>
           <div class="step-connector"></div>
           <div class="step-body">
             <h3>Structure</h3>
-            <p>We map priorities, scope, movement, and what the business actually needs next.</p>
+            <p>We map priorities, scope, and what the business actually needs next — not a generic plan, but a sequence that fits the real situation.</p>
           </div>
         </div>
         <div class="rhythm-step" data-reveal data-reveal-delay="280">
-          <div class="step-marker">
-            <span class="step-n">03</span>
-          </div>
+          <div class="step-marker"><span class="step-n">03</span></div>
           <div class="step-connector step-connector--last"></div>
           <div class="step-body">
             <h3>Execution</h3>
-            <p>I lead the work directly and bring in specialist support where the scope demands it.</p>
+            <p>I lead the work directly and bring in specialist support where the scope demands it. The work moves. The results are measurable.</p>
           </div>
         </div>
       </div>
-
       <p class="rhythm-footnote" data-reveal>Some projects need strategy. Some need systems. Some need specialists.<br>The model adapts to the work.</p>
     </div>
   </section>
 
-  <!-- ============================================================
-       FIELD NOTES — editorial memo styling
-       ============================================================ -->
+  <!-- FIELD NOTES -->
   <section class="field-notes" id="field-notes">
     <div class="fn-inner">
       <div class="fn-hd" data-reveal>
         <span class="tag-label">Operator observations</span>
         <h2 class="section-h">Field Notes</h2>
-        <p class="section-sub">Short pieces on execution gaps, marketplace lessons, brand clarity, growth mistakes, and what founders usually miss.</p>
+        <p class="section-sub">Short pieces on execution gaps, marketplace lessons, brand clarity, and what founders usually miss.</p>
       </div>
-
       <div class="fn-grid">
         <article class="fn-card" data-reveal>
           <div class="fn-accent-bar"></div>
-          <span class="fn-num">Note 001</span>
-          <h3>Why most e-commerce advice dies in execution</h3>
-          <span class="fn-tag">Execution</span>
+          <div class="fn-card-inner">
+            <span class="fn-num">Note 001</span>
+            <h3>Why most e-commerce advice dies in execution</h3>
+            <div class="fn-footer"><span class="fn-tag">Execution</span><a href="field-notes.html" class="fn-read">Read →</a></div>
+          </div>
         </article>
         <article class="fn-card" data-reveal data-reveal-delay="80">
           <div class="fn-accent-bar"></div>
-          <span class="fn-num">Note 002</span>
-          <h3>Marketplace growth breaks when backend discipline disappears</h3>
-          <span class="fn-tag">Marketplaces</span>
+          <div class="fn-card-inner">
+            <span class="fn-num">Note 002</span>
+            <h3>Marketplace growth breaks when backend discipline disappears</h3>
+            <div class="fn-footer"><span class="fn-tag">Marketplaces</span><a href="field-notes.html" class="fn-read">Read →</a></div>
+          </div>
         </article>
-        <article class="fn-card fn-card--wide" data-reveal data-reveal-delay="160">
+        <article class="fn-card" data-reveal data-reveal-delay="160">
           <div class="fn-accent-bar"></div>
-          <span class="fn-num">Note 003</span>
-          <h3>Brand clarity is often weaker than the ads</h3>
-          <span class="fn-tag">Brand</span>
+          <div class="fn-card-inner">
+            <span class="fn-num">Note 003</span>
+            <h3>Brand clarity is often weaker than the ads</h3>
+            <div class="fn-footer"><span class="fn-tag">Brand</span><a href="field-notes.html" class="fn-read">Read →</a></div>
+          </div>
         </article>
-        <article class="fn-card fn-card--wide" data-reveal data-reveal-delay="240">
+        <article class="fn-card" data-reveal data-reveal-delay="240">
           <div class="fn-accent-bar"></div>
-          <span class="fn-num">Note 004</span>
-          <h3>Founders do not need more reports. They need better movement.</h3>
-          <span class="fn-tag">Founders</span>
+          <div class="fn-card-inner">
+            <span class="fn-num">Note 004</span>
+            <h3>Founders do not need more reports. They need better movement.</h3>
+            <div class="fn-footer"><span class="fn-tag">Founders</span><a href="field-notes.html" class="fn-read">Read →</a></div>
+          </div>
         </article>
+      </div>
+      <div class="section-cta-row" data-reveal>
+        <a href="field-notes.html" class="btn-outline">All Field Notes →</a>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       DISCOVERY — asymmetric premium intake
-       ============================================================ -->
+  <!-- DISCOVERY -->
   <section class="discovery" id="discovery">
     <div class="discovery-atmosphere"></div>
     <div class="discovery-inner">
-
       <div class="disc-left" data-reveal>
         <span class="tag-label">Start here</span>
         <h2 class="section-h disc-h">Discovery</h2>
         <p class="disc-body">If the business has movement in it, but something is getting lost between ambition and execution, start here.</p>
         <p class="disc-body">This is where we surface the friction, understand the context, and decide whether there is a real fit.</p>
-
         <div class="disc-contacts">
           <a href="mailto:hello@vsfusions.com" class="disc-link">
             <div class="disc-link-icon">✉</div>
@@ -418,7 +384,6 @@
           </a>
         </div>
       </div>
-
       <div class="disc-right" data-reveal data-reveal-delay="180">
         <div class="disc-form-panel">
           <div class="disc-form-top">
@@ -428,11 +393,11 @@
           <form id="discForm">
             <div class="f-field">
               <label for="f-name">Name</label>
-              <input type="text" id="f-name" placeholder="Your name" />
+              <input type="text" id="f-name" placeholder="Your name" autocomplete="name" />
             </div>
             <div class="f-field">
               <label for="f-email">Email</label>
-              <input type="email" id="f-email" placeholder="you@company.com" />
+              <input type="email" id="f-email" placeholder="you@company.com" autocomplete="email" />
             </div>
             <div class="f-field">
               <label for="f-brand">Company / Brand</label>
@@ -440,27 +405,27 @@
             </div>
             <div class="f-field">
               <label for="f-stuck">What feels stuck right now?</label>
-              <textarea id="f-stuck" rows="4" placeholder="Describe where growth is getting lost..."></textarea>
+              <textarea id="f-stuck" rows="5" placeholder="Describe where growth is getting lost..."></textarea>
             </div>
             <button type="submit" class="btn-primary btn-full">Find the Friction &nbsp;→</button>
           </form>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div>
         <p class="footer-logo">Vafadher</p>
         <p class="footer-pos">E-commerce Operator · Marketplace Growth · Systems & Brand Execution</p>
       </div>
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="momentum.html">Momentum</a>
+        <a href="field-notes.html">Field Notes</a>
         <a href="mailto:hello@vsfusions.com">hello@vsfusions.com</a>
-        <a href="https://wa.me/918019293069" target="_blank">WhatsApp</a>
-      </div>
+        <a href="https://wa.me/918019293069" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
     </div>
     <div class="footer-base">
       <p>© 2025 Vafadher. All rights reserved.</p>
