@@ -18,7 +18,7 @@
       <a href="index.html" class="nav-logo">Vafadher</a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="momentum.html" class="nav-link">Momentum</a></li>
+        <li><a href="momentum" class="nav-link">Momentum</a></li>
         <li><a href="index.html#systems" class="nav-link">Systems</a></li>
         <li><a href="index.html#working-rhythm" class="nav-link">Working Rhythm</a></li>
         <li><a href="field-notes" class="nav-link active">field-notes</a></li>
@@ -33,7 +33,7 @@
   <div class="mobile-nav" id="mobileNav">
     <ul>
       <li><a href="index.html" class="mob-link">Home</a></li>
-      <li><a href="momentum.html" class="mob-link">Momentum</a></li>
+      <li><a href="momentum" class="mob-link">Momentum</a></li>
       <li><a href="index.html#systems" class="mob-link">Systems</a></li>
       <li><a href="index.html#working-rhythm" class="mob-link">Working Rhythm</a></li>
       <li><a href="field-notes" class="mob-link">field-notes</a></li>
@@ -147,7 +147,7 @@
       </div>
       <nav class="footer-links">
         <a href="index.html">Home</a>
-        <a href="momentum.html">Momentum</a>
+        <a href="momentum">Momentum</a>
         <a href="mailto:hello@vsfusions.com">hello@vsfusions.com</a>
         <a href="https://wa.me/918019293069" target="_blank" rel="noopener">WhatsApp</a>
       </nav>
