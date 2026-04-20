@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>field-notes — Vafadher</title>
+  <title>Field Notes — Vafadher</title>
   <meta name="description" content="Operator observations on execution gaps, marketplace lessons, brand clarity, and what founders usually miss." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c0e'/%3E%3Cpath d='M7 8 L16 24 L25 8' stroke='%23f2efe9' stroke-width='3' fill='none' stroke-linecap='square'/%3E%3Cpath d='M12 8 L16 16' stroke='%23c5a24a' stroke-width='1' fill='none'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
@@ -12,10 +13,21 @@
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Vafadher</a>
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-monogram" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 10 L20 30 L32 10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M14 10 L20 20" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+        </svg>
+        <span class="logo-wordmark">Vafadher</span>
+      </a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="momentum" class="nav-link">Momentum</a></li>
@@ -41,98 +53,57 @@
     </ul>
   </div>
 
-  <!-- PAGE HERO -->
-  <div style="border-bottom: 1px solid var(--b-dim);">
-    <div class="page-hero" data-reveal>
-      <span class="page-hero-eyebrow">Operator observations</span>
-      <h1>field-notes</h1>
-      <p>Short pieces on execution gaps, marketplace lessons, brand clarity, and what founders usually miss. Written from the inside of the work, not from the outside looking in.</p>
-    </div>
-  </div>
-
-  <!-- FEATURED NOTE -->
-  <section style="border-bottom: 1px solid var(--b-dim); background: var(--surf-1);">
-    <div style="max-width: var(--max); margin: 0 auto; padding: 80px var(--px);" data-reveal>
-      <span class="tag-label">Featured note</span>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
-        <div>
-          <p style="font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--t-lo); margin-bottom: 20px;">Note 001 · Execution</p>
-          <h2 style="font-family: var(--f-display); font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 500; color: var(--t-hi); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 28px;">Why most e-commerce advice dies in execution</h2>
-          <p style="font-size: 15px; color: var(--t-mid); line-height: 1.8; margin-bottom: 20px;">The advice is rarely the problem. The gap between knowing what to do and actually doing it — cleanly, consistently, at pace — is where most businesses lose momentum.</p>
-          <p style="font-size: 15px; color: var(--t-mid); line-height: 1.8;">Founders are told to optimise listings, fix their ads, improve their margins. They understand this. What they don't have is the execution layer that turns that understanding into movement.</p>
-        </div>
-        <div>
-          <p style="font-family: var(--f-display); font-size: clamp(1.3rem, 2.2vw, 1.8rem); font-weight: 400; font-style: italic; color: var(--t-mid); line-height: 1.6; border-left: 2px solid var(--gold-line); padding-left: 24px; margin-bottom: 28px;">
-            "The information economy has made advice abundant and execution rare. That gap is exactly where most e-commerce businesses are stuck."
-          </p>
-          <p style="font-size: 14px; color: var(--t-lo); line-height: 1.75;">The result is a business that understands its problems intellectually but cannot resolve them operationally. Strategy without execution is a plan that lives in a document. Execution is what makes it real.</p>
-          <p style="font-size: 14px; color: var(--t-lo); line-height: 1.75; margin-top: 16px;">When I step into a business, I'm not adding more advice to the pile. I'm taking the work on — structuring it, running it, and making sure the results are measurable.</p>
-        </div>
+  <!-- FEATURED ARTICLE — editorial layout -->
+  <article class="fn-page-wrap" data-reveal>
+    <header class="fn-article-hero">
+      <div class="fn-article-meta">
+        <span class="fn-article-tag">Execution</span>
+        <span class="fn-article-dot"></span>
+        <span>Note 001</span>
+        <span class="fn-article-dot"></span>
+        <span>5 min read</span>
       </div>
+      <h1 class="fn-article-title">Why most e-commerce advice dies in execution</h1>
+      <p class="fn-article-lede">The information economy has made advice abundant. Execution remains rare. That gap is exactly where most e-commerce businesses are stuck.</p>
+    </header>
+
+    <div class="fn-article-body">
+      <p>The advice is rarely the problem. Founders know what to do. They've read the newsletters, followed the operators, attended the conferences. They understand they need better listings, sharper acquisition, tighter margins, cleaner systems.</p>
+
+      <p>The gap between knowing what to do and actually doing it — cleanly, consistently, at pace — is where most businesses lose momentum.</p>
+
+      <blockquote class="fn-pullquote">Strategy without execution is a plan that lives in a document. Execution is what makes it real.</blockquote>
+
+      <p>I see this pattern repeatedly. A business has clear goals. A reasonable plan. Talented people. And yet revenue stalls, margins compress, and the founder ends up frustrated — not because they don't know what's broken, but because no one is actually fixing it.</p>
+
+      <p>The information economy has produced an abundance of high-quality advice. Every operator problem has a framework, a newsletter, a YouTube breakdown. What it hasn't produced is more execution bandwidth inside the business itself.</p>
+
+      <p>When I step into a business, I'm not adding another framework to the pile. I'm taking the work on — structuring it, running it, and making sure the results are measurable. The difference isn't conceptual. It's operational.</p>
+
+      <p>Execution is not glamorous. It's listings rewritten at 11pm because the algorithm shifted. It's reconciliation that takes three weeks because the backend was never set up properly. It's decisions made without perfect information because waiting for certainty costs more than moving imperfectly.</p>
+
+      <p>This is the work. This is what most businesses actually need. And it's why advice — no matter how good — cannot do it for them.</p>
     </div>
+  </article>
+
+  <!-- MORE NOTES -->
+  <section class="fn-more-list">
+    <p class="fn-more-heading">More Notes</p>
+    <a href="#" class="fn-more-item">
+      <span class="fn-more-num">Note 002 · Marketplaces</span>
+      <h3 class="fn-more-title">Marketplace growth breaks when backend discipline disappears</h3>
+    </a>
+    <a href="#" class="fn-more-item">
+      <span class="fn-more-num">Note 003 · Brand</span>
+      <h3 class="fn-more-title">Brand clarity is often weaker than the ads</h3>
+    </a>
+    <a href="#" class="fn-more-item">
+      <span class="fn-more-num">Note 004 · Founders</span>
+      <h3 class="fn-more-title">Founders do not need more reports. They need better movement.</h3>
+    </a>
   </section>
 
-  <!-- ALL NOTES LISTING -->
-  <section style="border-bottom: 1px solid var(--b-dim);">
-    <div style="max-width: var(--max); margin: 0 auto; padding: 72px var(--px) 0;" data-reveal>
-      <p class="tag-label">All notes</p>
-    </div>
-    <div style="max-width: var(--max); margin: 0 auto; padding: 0 var(--px) 0;">
-      <div class="fn-listing" data-reveal>
-
-        <div class="fn-entry">
-          <div class="fn-entry-num">Note 001</div>
-          <div class="fn-entry-body">
-            <div class="fn-entry-title">Why most e-commerce advice dies in execution</div>
-            <div class="fn-entry-desc">The gap between knowing and doing is where businesses lose momentum. Strategy without execution is a document, not a result.</div>
-          </div>
-          <div class="fn-entry-tag">Execution</div>
-        </div>
-
-        <div class="fn-entry">
-          <div class="fn-entry-num">Note 002</div>
-          <div class="fn-entry-body">
-            <div class="fn-entry-title">Marketplace growth breaks when backend discipline disappears</div>
-            <div class="fn-entry-desc">Scaling a marketplace is not just a front-end problem. The backend — reconciliation, inventory, fulfilment — determines how long growth can hold.</div>
-          </div>
-          <div class="fn-entry-tag">Marketplaces</div>
-        </div>
-
-        <div class="fn-entry">
-          <div class="fn-entry-num">Note 003</div>
-          <div class="fn-entry-body">
-            <div class="fn-entry-title">Brand clarity is often weaker than the ads</div>
-            <div class="fn-entry-desc">Founders spend on ads before they've resolved what the brand actually stands for. The ads drive traffic to a message that doesn't convert.</div>
-          </div>
-          <div class="fn-entry-tag">Brand</div>
-        </div>
-
-        <div class="fn-entry">
-          <div class="fn-entry-num">Note 004</div>
-          <div class="fn-entry-body">
-            <div class="fn-entry-title">Founders do not need more reports. They need better movement.</div>
-            <div class="fn-entry-desc">Dashboards are not decisions. Most businesses have enough data — they're missing the interpretation and execution that turns information into progress.</div>
-          </div>
-          <div class="fn-entry-tag">Founders</div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Upcoming notes placeholder -->
-    <div style="max-width: var(--max); margin: 0 auto; padding: 56px var(--px);" data-reveal>
-      <div style="border: 1px solid var(--b-dim); border-radius: 3px; padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-        <div>
-          <p style="font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">More coming</p>
-          <p style="font-family: var(--f-display); font-size: 1.35rem; font-weight: 400; color: var(--t-hi); margin-bottom: 8px;">Notes are added as the work continues.</p>
-          <p style="font-size: 13.5px; color: var(--t-lo); line-height: 1.65; max-width: 480px;">Each note comes from a real situation — a pattern observed, a mistake corrected, or a lesson that keeps appearing across different businesses.</p>
-        </div>
-        <a href="index.html#discovery" class="btn-outline" style="flex-shrink: 0;">Start a conversation →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- DISCOVERY CTA -->
+  <!-- CTA -->
   <div class="disc-cta-block" data-reveal>
     <h2>If something here resonates —</h2>
     <p>The conversation starts with where you actually are, not where you think you should be.</p>
@@ -142,7 +113,13 @@
   <footer class="footer">
     <div class="footer-inner">
       <div>
-        <p class="footer-logo">Vafadher</p>
+        <div class="footer-brand-row">
+          <svg class="footer-monogram" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 10 L20 30 L32 10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M14 10 L20 20" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+          </svg>
+          <p class="footer-logo">Vafadher</p>
+        </div>
         <p class="footer-pos">E-commerce Operator · Marketplace Growth · Systems & Brand Execution</p>
       </div>
       <nav class="footer-links">
