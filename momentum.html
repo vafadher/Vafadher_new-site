@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Momentum — Vafadher</title>
   <meta name="description" content="Proof of what moved, what changed, and what it took. Momentum cases from Vafadher." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c0e'/%3E%3Cpath d='M7 8 L16 24 L25 8' stroke='%23f2efe9' stroke-width='3' fill='none' stroke-linecap='square'/%3E%3Cpath d='M12 8 L16 16' stroke='%23c5a24a' stroke-width='1' fill='none'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
@@ -12,16 +13,27 @@
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Vafadher</a>
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-monogram" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 10 L20 30 L32 10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M14 10 L20 20" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+        </svg>
+        <span class="logo-wordmark">Vafadher</span>
+      </a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="momentum" class="nav-link active">Momentum</a></li>
+        <li><a href="momentum.html" class="nav-link active">Momentum</a></li>
         <li><a href="index.html#systems" class="nav-link">Systems</a></li>
         <li><a href="index.html#working-rhythm" class="nav-link">Working Rhythm</a></li>
-        <li><a href="field-notes" class="nav-link">Field Notes</a></li>
+        <li><a href="field-notes.html" class="nav-link">Field Notes</a></li>
         <li><a href="index.html#discovery" class="nav-link nav-cta">Discovery</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -33,149 +45,102 @@
   <div class="mobile-nav" id="mobileNav">
     <ul>
       <li><a href="index.html" class="mob-link">Home</a></li>
-      <li><a href="momentum" class="mob-link">Momentum</a></li>
+      <li><a href="momentum.html" class="mob-link">Momentum</a></li>
       <li><a href="index.html#systems" class="mob-link">Systems</a></li>
       <li><a href="index.html#working-rhythm" class="mob-link">Working Rhythm</a></li>
-      <li><a href="field-notes" class="mob-link">Field Notes</a></li>
+      <li><a href="field-notes.html" class="mob-link">Field Notes</a></li>
       <li><a href="index.html#discovery" class="mob-link">Discovery</a></li>
     </ul>
   </div>
 
   <!-- PAGE HERO -->
-  <div style="border-bottom: 1px solid var(--b-dim);">
-    <div class="page-hero" data-reveal>
-      <span class="page-hero-eyebrow">Proof of work</span>
-      <h1>Momentum</h1>
-      <p>Proof of what moved, what changed, and what it took. Each case represents a real business problem met with direct execution — not recommendations, not reports.</p>
+  <div class="page-hero" data-reveal>
+    <span class="page-hero-eyebrow">Proof of work</span>
+    <h1>Momentum</h1>
+    <p>Each case is a real situation — the problem met head-on, and the movement that followed. Not recommendations, not reports. Execution.</p>
+  </div>
+
+  <!-- CASE 01 -->
+  <section class="m-case-v2" data-reveal>
+    <div class="m-case-meta-col">Case 01 / 04</div>
+
+    <div class="m-col-problem">
+      <span class="m-case-col-label">The Problem</span>
+      <h3>Fragmented marketplace launch</h3>
+      <p>A brand entered its first marketplace with uneven listings, no channel structure, and inconsistent execution. The product was strong. Everything around it was chaos.</p>
+      <p>Growth was stalling before it had a chance to start.</p>
     </div>
-  </div>
 
-  <!-- FRAMING STATEMENT -->
-  <div style="padding: 80px var(--px); max-width: var(--max); margin: 0 auto; border-bottom: 1px solid var(--b-dim);" data-reveal>
-    <p style="font-family: var(--f-display); font-size: clamp(1.35rem, 2.4vw, 1.95rem); font-weight: 400; color: var(--t-mid); line-height: 1.6; max-width: 680px;">
-      The work varies. The execution standard does not. Whether it starts with a broken backend or a stalled marketplace, the goal is always the same — movement that is real, measurable, and sustained.
-    </p>
-  </div>
-
-  <!-- CASE STUDIES — detailed format -->
-  <section style="padding: 0; border-bottom: 1px solid var(--b-dim);">
-    <div class="m-cases">
-
-      <div class="m-case" data-reveal>
-        <div class="m-case-num">Case 01</div>
-        <div class="m-case-body">
-          <h3>Marketplace Acceleration</h3>
-          <p>A brand entered its first marketplace with a fragmented approach — uneven listings, no channel structure, and inconsistent execution. The problem was not the product. It was everything around it.</p>
-          <p style="margin-top: 16px;">I rebuilt the listing architecture, established a clear channel structure, and maintained execution consistency across eight months of scaling. The result was not luck — it was discipline applied to the right levers at the right time.</p>
-          <div class="m-case-tags" style="margin-top: 28px;">
-            <span class="m-tag">Amazon</span>
-            <span class="m-tag">Listing architecture</span>
-            <span class="m-tag">Channel structure</span>
-            <span class="m-tag">8 months</span>
-          </div>
-        </div>
-        <div class="m-case-meta">
-          <div class="m-case-result">₹1.7 Cr</div>
-          <div class="m-case-label">Revenue per month at peak</div>
-          <div style="height: 1px; background: var(--b-dim); margin: 20px 0;"></div>
-          <p style="font-size: 13px; color: var(--t-lo); line-height: 1.7;">From launch to ₹1.7 Cr/month in 8 months through structural execution, not short-term tactics.</p>
-        </div>
-      </div>
-
-      <div class="m-case" data-reveal>
-        <div class="m-case-num">Case 02</div>
-        <div class="m-case-body">
-          <h3>Revenue Lift Through Tighter Execution</h3>
-          <p>The business was generating ₹20L/month but growth had stalled. The founders were making decisions without a clear picture of what was actually working — and what was consuming margin without return.</p>
-          <p style="margin-top: 16px;">I restructured the decision flow, tightened execution across the growth levers, and improved the rhythm at which the team operated. Within 3 months, revenue had moved from ₹20L to ₹50L/month.</p>
-          <div class="m-case-tags" style="margin-top: 28px;">
-            <span class="m-tag">Decision flow</span>
-            <span class="m-tag">Execution rhythm</span>
-            <span class="m-tag">Revenue structure</span>
-            <span class="m-tag">3 months</span>
-          </div>
-        </div>
-        <div class="m-case-meta">
-          <div class="m-case-result">₹20L→₹50L</div>
-          <div class="m-case-label">Monthly revenue in 3 months</div>
-          <div style="height: 1px; background: var(--b-dim); margin: 20px 0;"></div>
-          <p style="font-size: 13px; color: var(--t-lo); line-height: 1.7;">150% revenue lift. Not from a new channel — from better execution on what already existed.</p>
-        </div>
-      </div>
-
-      <div class="m-case" data-reveal>
-        <div class="m-case-num">Case 03</div>
-        <div class="m-case-body">
-          <h3>Backend Recovery & Control</h3>
-          <p>The business was losing money it did not know it was losing. Sales data was fragmented, reconciliation was incomplete, and backend controls were soft. The exposure was significant — and growing.</p>
-          <p style="margin-top: 16px;">I introduced systematic reconciliation, tightened backend controls, and restructured how sales data was tracked and actioned. 95% reconciliation was achieved, and ₹10+ lakhs was recovered or saved.</p>
-          <div class="m-case-tags" style="margin-top: 28px;">
-            <span class="m-tag">Sales reconciliation</span>
-            <span class="m-tag">Backend controls</span>
-            <span class="m-tag">Financial discipline</span>
-          </div>
-        </div>
-        <div class="m-case-meta">
-          <div class="m-case-result">₹10L+</div>
-          <div class="m-case-label">Recovered through backend controls</div>
-          <div style="height: 1px; background: var(--b-dim); margin: 20px 0;"></div>
-          <p style="font-size: 13px; color: var(--t-lo); line-height: 1.7;">95% reconciliation rate. The money was already there — it just needed better systems to capture it.</p>
-        </div>
-      </div>
-
-      <div class="m-case" data-reveal>
-        <div class="m-case-num">Case 04</div>
-        <div class="m-case-body">
-          <h3>Revenue Generated From Ground Up</h3>
-          <p>A business needed more than a growth plan — it needed a functioning operational foundation. Backend systems, warehouse coordination, and ERP execution were all underdeveloped. Growth could not happen without infrastructure.</p>
-          <p style="margin-top: 16px;">I led the ERP and warehouse execution layer from early implementation through to operational stability. The foundation held, and within 3 months the business was generating ₹25L/month in revenue.</p>
-          <div class="m-case-tags" style="margin-top: 28px;">
-            <span class="m-tag">ERP execution</span>
-            <span class="m-tag">Warehouse operations</span>
-            <span class="m-tag">Backend infrastructure</span>
-            <span class="m-tag">3 months</span>
-          </div>
-        </div>
-        <div class="m-case-meta">
-          <div class="m-case-result">₹25L</div>
-          <div class="m-case-label">Revenue generated per month in 3 months</div>
-          <div style="height: 1px; background: var(--b-dim); margin: 20px 0;"></div>
-          <p style="font-size: 13px; color: var(--t-lo); line-height: 1.7;">Built the operational layer that made growth possible — then watched the revenue follow.</p>
-        </div>
-      </div>
-
+    <div class="m-col-movement">
+      <span class="m-case-col-label">The Movement</span>
+      <h3>Marketplace Acceleration</h3>
+      <p>Rebuilt listing architecture, established clear channel structure, maintained execution consistency across 8 months of scaling.</p>
+      <div class="m-stat-large">₹1.7 Cr</div>
+      <div class="m-stat-small">Monthly GMV at peak · 8 months · Amazon</div>
     </div>
   </section>
 
-  <!-- METRICS STRIP -->
-  <section style="padding: 0; background: var(--surf-1); border-bottom: 1px solid var(--b-dim);">
-    <div style="max-width: var(--max); margin: 0 auto; padding: 64px var(--px) 0;">
-      <p class="tag-label" data-reveal>Outcomes at a glance</p>
+  <!-- CASE 02 -->
+  <section class="m-case-v2" data-reveal>
+    <div class="m-case-meta-col">Case 02 / 04</div>
+
+    <div class="m-col-problem">
+      <span class="m-case-col-label">The Problem</span>
+      <h3>Revenue plateaued at ₹20L</h3>
+      <p>The business was generating consistent revenue but growth had stalled. Founders were making decisions without a clear picture of what was working — and what was consuming margin without return.</p>
+      <p>Effort was high. Movement was low.</p>
     </div>
-    <div style="max-width: var(--max); margin: 0 auto; padding: 0 var(--px) 0;" data-reveal>
-      <div class="m-metrics" style="margin-top: 0;">
-        <div class="m-metric-item">
-          <div class="m-metric-val">₹1.7 Cr</div>
-          <div class="m-metric-desc">Peak monthly GMV achieved across marketplace channels</div>
-        </div>
-        <div class="m-metric-item">
-          <div class="m-metric-val">95%</div>
-          <div class="m-metric-desc">Sales reconciliation rate — backend discipline at scale</div>
-        </div>
-        <div class="m-metric-item">
-          <div class="m-metric-val">150%</div>
-          <div class="m-metric-desc">Revenue lift from ₹20L to ₹50L in 3 months through execution alone</div>
-        </div>
-      </div>
-    </div>
-    <div style="max-width: var(--max); margin: 0 auto; padding: 48px var(--px);" data-reveal>
-      <p style="font-family: var(--f-display); font-size: clamp(1.1rem, 2vw, 1.5rem); font-weight: 400; font-style: italic; color: var(--t-lo); max-width: 620px; line-height: 1.65; border-left: 2px solid var(--gold-dim); padding-left: 20px;">
-        These are not projections or estimated outcomes. They are the results of structured execution applied to businesses where the ambition was real but the movement was blocked.
-      </p>
+
+    <div class="m-col-movement">
+      <span class="m-case-col-label">The Movement</span>
+      <h3>Revenue Lift Through Tighter Execution</h3>
+      <p>Restructured decision flow, tightened execution across growth levers, improved the rhythm at which the team operated.</p>
+      <div class="m-stat-large">₹20L → ₹50L</div>
+      <div class="m-stat-small">Monthly revenue in 3 months · 150% lift</div>
     </div>
   </section>
 
-  <!-- DISCOVERY CTA -->
+  <!-- CASE 03 -->
+  <section class="m-case-v2" data-reveal>
+    <div class="m-case-meta-col">Case 03 / 04</div>
+
+    <div class="m-col-problem">
+      <span class="m-case-col-label">The Problem</span>
+      <h3>Money slipping through the backend</h3>
+      <p>The business was losing money it did not know it was losing. Sales data was fragmented, reconciliation was incomplete, and backend controls were soft.</p>
+      <p>The exposure was significant — and growing.</p>
+    </div>
+
+    <div class="m-col-movement">
+      <span class="m-case-col-label">The Movement</span>
+      <h3>Backend Recovery & Control</h3>
+      <p>Introduced systematic reconciliation, tightened backend controls, restructured how sales data was tracked and actioned.</p>
+      <div class="m-stat-large">₹10L+</div>
+      <div class="m-stat-small">Recovered · 95% reconciliation rate</div>
+    </div>
+  </section>
+
+  <!-- CASE 04 -->
+  <section class="m-case-v2" data-reveal>
+    <div class="m-case-meta-col">Case 04 / 04</div>
+
+    <div class="m-col-problem">
+      <span class="m-case-col-label">The Problem</span>
+      <h3>No operational foundation for growth</h3>
+      <p>A business needed more than a growth plan — it needed a functioning operational foundation. Backend systems, warehouse coordination, and ERP execution were all underdeveloped.</p>
+      <p>Growth could not happen without infrastructure.</p>
+    </div>
+
+    <div class="m-col-movement">
+      <span class="m-case-col-label">The Movement</span>
+      <h3>Sales Generated From Ground Up</h3>
+      <p>Led ERP and warehouse execution from early implementation through operational stability. Built the layer that made growth possible.</p>
+      <div class="m-stat-large">₹25L</div>
+      <div class="m-stat-small">Monthly sales generated · 3 months</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <div class="disc-cta-block" data-reveal>
     <h2>If your business has momentum in it —</h2>
     <p>Start with a conversation. Tell me where growth is getting stuck and we'll decide if there's a real fit.</p>
@@ -185,12 +150,18 @@
   <footer class="footer">
     <div class="footer-inner">
       <div>
-        <p class="footer-logo">Vafadher</p>
+        <div class="footer-brand-row">
+          <svg class="footer-monogram" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 10 L20 30 L32 10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M14 10 L20 20" stroke="var(--gold)" stroke-width="0.8" fill="none"/>
+          </svg>
+          <p class="footer-logo">Vafadher</p>
+        </div>
         <p class="footer-pos">E-commerce Operator · Marketplace Growth · Systems & Brand Execution</p>
       </div>
       <nav class="footer-links">
         <a href="index.html">Home</a>
-        <a href="field-notes">Field Notes</a>
+        <a href="field-notes.html">Field Notes</a>
         <a href="mailto:hello@vsfusions.com">hello@vsfusions.com</a>
         <a href="https://wa.me/918019293069" target="_blank" rel="noopener">WhatsApp</a>
       </nav>
