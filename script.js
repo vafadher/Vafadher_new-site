@@ -1,4 +1,4 @@
-/* VAFADHER — script.js v4 */
+/* VAFADHER v5 — script.js */
 
 // ---- NAV SCROLL ----
 const nav = document.getElementById('nav');
@@ -6,12 +6,11 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
-// ---- ACTIVE NAV (homepage only) ----
+// ---- ACTIVE NAV ----
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
-
 function updateActiveNav() {
-  if (sections.length === 0) return;
+  if (!sections.length) return;
   let current = '';
   sections.forEach(s => {
     if (window.scrollY >= s.offsetTop - 120) current = s.id;
@@ -35,7 +34,7 @@ if (toggle && mobileNav) {
   );
 }
 
-// ---- SMOOTH SCROLL (same-page anchor links) ----
+// ---- SMOOTH SCROLL ----
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const href = a.getAttribute('href');
@@ -43,7 +42,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
-      const navH = nav ? nav.offsetHeight : 70;
+      const navH = nav ? nav.offsetHeight : 68;
       window.scrollTo({
         top: target.getBoundingClientRect().top + window.scrollY - navH,
         behavior: 'smooth'
@@ -52,7 +51,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ---- SCROLL REVEAL ----
+// ---- SCROLL REVEAL (slide + fade) ----
 const revealEls = document.querySelectorAll('[data-reveal]');
 const revealObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -61,19 +60,18 @@ const revealObs = new IntersectionObserver((entries) => {
       revealObs.unobserve(e.target);
     }
   });
-}, { threshold: 0.07, rootMargin: '0px 0px -36px 0px' });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 revealEls.forEach(el => revealObs.observe(el));
 
-// ---- HERO IMMEDIATE REVEAL ----
+// ---- HERO + PAGE HERO IMMEDIATE REVEAL ----
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
-    document.querySelectorAll('.hero [data-reveal], .page-hero[data-reveal]').forEach(el =>
-      el.classList.add('visible')
-    );
+    document.querySelectorAll('.hero [data-reveal], .page-hero[data-reveal]')
+      .forEach(el => el.classList.add('visible'));
   }, 60);
 });
 
-// ---- HERO PARALLAX ----
+// ---- HERO ATMOSPHERE PARALLAX ----
 const atm = document.querySelector('.hero-atmosphere');
 if (atm) {
   window.addEventListener('scroll', () => {
@@ -81,17 +79,17 @@ if (atm) {
   }, { passive: true });
 }
 
-// ---- MARQUEE — pause on hover ----
-const marqueeTrack = document.querySelector('.marquee-track');
-const marqueeWrap = document.querySelector('.marquee-wrap');
-if (marqueeTrack && marqueeWrap) {
-  marqueeWrap.addEventListener('mouseenter', () => {
-    marqueeTrack.style.animationPlayState = 'paused';
+// ---- HOVER GLOW CURSOR TRACKING ----
+// Updates CSS custom props on mouse move for the glow to follow cursor
+document.querySelectorAll('.hover-glow').forEach(el => {
+  el.addEventListener('mousemove', (e) => {
+    const rect = el.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    el.style.setProperty('--mouse-x', x + '%');
+    el.style.setProperty('--mouse-y', y + '%');
   });
-  marqueeWrap.addEventListener('mouseleave', () => {
-    marqueeTrack.style.animationPlayState = 'running';
-  });
-}
+});
 
 // ---- FORM SUBMIT ----
 const form = document.getElementById('discForm');
@@ -111,8 +109,3 @@ if (form) {
     }, 4000);
   });
 }
-
-// ---- FIELD NOTES ENTRIES — hover lift ----
-document.querySelectorAll('.fn-entry').forEach(el => {
-  el.style.transition = 'background 0.25s';
-});
