@@ -1,4 +1,4 @@
-/* VAFADHER v5 — script.js */
+/* VAFADHER v6 — script.js */
 
 // ---- NAV SCROLL ----
 const nav = document.getElementById('nav');
@@ -51,7 +51,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ---- SCROLL REVEAL (slide + fade) ----
+// ---- SCROLL REVEAL ----
 const revealEls = document.querySelectorAll('[data-reveal]');
 const revealObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -63,7 +63,7 @@ const revealObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 revealEls.forEach(el => revealObs.observe(el));
 
-// ---- HERO + PAGE HERO IMMEDIATE REVEAL ----
+// ---- HERO IMMEDIATE ----
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.querySelectorAll('.hero [data-reveal], .page-hero[data-reveal]')
@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }, 60);
 });
 
-// ---- HERO ATMOSPHERE PARALLAX ----
+// ---- HERO PARALLAX ----
 const atm = document.querySelector('.hero-atmosphere');
 if (atm) {
   window.addEventListener('scroll', () => {
@@ -79,19 +79,20 @@ if (atm) {
   }, { passive: true });
 }
 
-// ---- HOVER GLOW CURSOR TRACKING ----
-// Updates CSS custom props on mouse move for the glow to follow cursor
-document.querySelectorAll('.hover-glow').forEach(el => {
-  el.addEventListener('mousemove', (e) => {
-    const rect = el.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    el.style.setProperty('--mouse-x', x + '%');
-    el.style.setProperty('--mouse-y', y + '%');
+// ---- HOVER GLOW (desktop only) ----
+if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  document.querySelectorAll('.hover-glow').forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      el.style.setProperty('--mouse-x', x + '%');
+      el.style.setProperty('--mouse-y', y + '%');
+    });
   });
-});
+}
 
-// ---- FORM SUBMIT ----
+// ---- FORM ----
 const form = document.getElementById('discForm');
 if (form) {
   form.addEventListener('submit', e => {
